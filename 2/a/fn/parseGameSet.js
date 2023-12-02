@@ -5,7 +5,7 @@ function parseGameSet(gameSetInput) {
 		.reduce((gameSetMap, colorInput) => {
 			const [count, color] = colorInput.split(' ');
 
-			gameSetMap[color] = count;
+			gameSetMap[color] = parseInt(count);
 
 			return gameSetMap;
 		}, {});
