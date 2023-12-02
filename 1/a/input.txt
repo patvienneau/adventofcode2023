@@ -1,8 +1,4 @@
-function isNumeric(s) {
-    return !isNaN(s - parseFloat(s));
-}
-
-const input = `ckmb52fldxkseven3fkjgcbzmnr7
+ckmb52fldxkseven3fkjgcbzmnr7
 gckhqpb6twoqnjxqplthree2fourkspnsnzxlz1
 2onetwocrgbqm7
 frkh2nineqmqxrvdsevenfive
@@ -1001,24 +997,4 @@ pseven3threeeightseven
 five2two7hstbbqzrninegbtwo2
 eightfblzpmhs4
 fbbdeightzzsdffh8jbjzxkclj
-3nine6five1`;
-
-const sum = input
-    .split('\n')
-    .map(str => {
-        const numberStrings = str
-            .split('')
-            .filter(isNumeric)
-        
-        const firstNumber = numberStrings[0];
-        const lastNumber = numberStrings[numberStrings.length - 1];
-        
-        return `${firstNumber}${lastNumber}`;
-    })
-    .map(val => parseInt(val))
-    .reduce((sum, val = 0) => {
-        return sum + val
-    }, 0);
-
-console.log(sum);
-
+3nine6five1
