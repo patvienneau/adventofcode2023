@@ -10,7 +10,6 @@ function validateNumber(numberSpec, inputArr) {
 		columnIndex,
 		rowIndex,
 		length,
-		value,
 	} = numberSpec;
 
 	let isNumberValid = false;
